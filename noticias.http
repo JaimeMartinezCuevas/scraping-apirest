@@ -1,0 +1,29 @@
+POST http://localhost:3000/scraping
+Content-Type: application/json
+
+{
+    "titulo": "Segundo articulo",
+    "imagen": "http:/primer_articulo",
+    "descripcion": "Descripción",
+    "enlace": "http:/segundo_articulo"
+}
+
+###
+
+DELETE http://localhost:3000/scraping/2
+
+###
+
+GET http://localhost:3000/scraping/10
+
+###
+
+PUT http://localhost:3000/scraping/5
+Content-Type: application/json
+
+{
+    "titulo": "Segundo articulo editado",
+    "imagen": "http:/primer_articulo",
+    "descripcion": "Descripción",
+    "enlace": "http:/primer_articulo"
+}
